@@ -6,6 +6,6 @@ set -o errexit
 
 pip install -r requirements.txt
 
-python manage.py createsuperuser --username=muniz-laptop --email=muniz-laptop@admin.com --password=admin
+python manage.py createsuperuser --no-input
 python manage.py collectstatic --no-input
 python manage.py migrate
